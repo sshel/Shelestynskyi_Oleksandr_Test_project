@@ -36,6 +36,14 @@ describe('UI testing',()=>{
         cy.contains('Name: User').should('be.visible')
     })
 
+    it('Submit a user form with empty comment field', () => {
+        cy.get('#g2599-name').type('User')
+        cy.get('#g2599-email').type('user@gmail.com')
+        cy.get('button[type="submit"]').click()
+        cy.get('[name="g2599-comment"]').then(($input) => {
+             expect($input[0].validationMessage).to.eq('Please fill out this field.')
+            })
+        })
 
 describe('Alert Box testing',()=>{
     beforeEach(()=>{
@@ -68,3 +76,6 @@ describe('Alert Box testing',()=>{
          })
     })
 })
+
+
+
