@@ -21,7 +21,13 @@
 	<ul>
 		<li>Test cases: <a href="https://docs.google.com/spreadsheets/d/1TXG1gsyF4yxc67J8_YdbbcCgcp2uUhwhzu1nA6TKEtg/edit?usp=sharing">link</a></li>
 		<li>Automation Robot Framework: <a href="rf/testingAPI.robot">link</a></li>
-	</ul>
+	</ul>		
 </li>
-</ol>
+</ol>			
+	<p>to run test on Robot Framework use the command in terminal </p>
+	<p>robot -v log:value -v pass:value testingAPI.robot</p>
+			
+		
+	
+
 
